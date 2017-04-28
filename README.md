@@ -10,7 +10,7 @@ You can change the settings with the EXPORT_SETTINGS environment variable.
 | Variable           | Description                                                | Default                                         |
 |--------------------|------------------------------------------------------------|-------------------------------------------------|
 | EXPORTED_DIRECTORY | The directory being shared over NFSv4                      | /mnt                                            |
-| EXPORT_SETTINGS    | Comma-separated settings for all exports                   | rw,fsid=0,root_squash,no_subtree_check,insecure |
+| EXPORT_SETTINGS    | Comma-separated settings for all exports                   | rw,fsid=0,async,no_subtree_check,no_auth_nlm,insecure,no_root_squash |
 
 ## Running
 

@@ -7,7 +7,7 @@ RUN set -xe \
 	&& rm -rf /var/cache/apk/*
 
 ENV EXPORTED_DIRECTORY /srv/test
-ENV EXPORT_SETTINGS rw,fsid=0,root_squash,no_subtree_check,insecure
+ENV EXPORT_SETTINGS async,no_subtree_check,no_auth_nlm,insecure,no_root_squash
 
 COPY entrypoint.sh /entrypoint.sh
 
