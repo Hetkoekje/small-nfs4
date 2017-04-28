@@ -15,11 +15,14 @@ You can change the settings with the EXPORT_SETTINGS environment variable.
 ## Running
 
 **Mounting**
+
 Since we use fsid=0 in the default settings, you don't need to specify the folder when mounting. So you can just mount like this: `sudo mount -v x.x.x.x:/ /mnt/mynfs4mount`
 
 
 **Make accessible to others**
+
 If you want to be able to use another machine to connect to this NFS share, add `--net=host` to the run command. It will use the hosts networking stack to expose port 2049.
 
 **Mounting in another container (Docker in Docker)**
+
 Make sure to add the SYS_ADMIN capability or run in privileged mode.
